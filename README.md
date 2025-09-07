@@ -1,5 +1,6 @@
-1. Retail Data Transformation & Monthly Sales Analysis
-
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=D4A200&center=False&width=680&lines=Retail+Data+Transformation+And+Monthly+Sales+Analysis" />
+</p>
 This project focuses on cleaning and transforming raw retail transaction data using PySpark. 
 Key steps include parsing and formatting dates, casting data types, extracting monthly insights, and aggregating metrics such as revenue, sales volume, and quantity sold. 
 The final dataset enables clear visualization of business performance trends across months.
