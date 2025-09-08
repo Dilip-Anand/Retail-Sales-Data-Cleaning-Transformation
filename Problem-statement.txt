@@ -11,3 +11,15 @@ Tasks:
 5. Filter out unrealistic prices (e.g., price < 0 or > 10,000).
 
 Create a summary DataFrame of daily total sales and item count.
+
+Transformations used:
+
+1. df.count()
+2. df.dropna(subset=['Transaction ID', 'Date', 'Customer ID', 'Product Category', 'Quantity', 'Price per Unit'])
+3. df.dropDuplicates()
+4. df.withColumn("Date",col("Date").cast("date"))
+5. df.groupBy("Month")
+6. df.agg()
+7. df.agg(sum("Total Amount"))
+8. df.alias("Total_Monthly_Revenue"),sum("Quantity").alias("Monthly_Quantity_Sold"),count("Transaction ID").alias("Monthly_Sales"))
+9. df.orderBy("Month")
